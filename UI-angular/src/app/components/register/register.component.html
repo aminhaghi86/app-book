@@ -1,9 +1,10 @@
-<div class="container mt-4" >
+<div class="register-container">
+<div class="container" >
   <div class="row justify-content-center">
     <div class="col-md-6">
       <div class="registration-form p-4 shadow rounded">
         <form (ngSubmit)="onSubmit()">
-          <h3 class="text-center">Register Form</h3>
+          <h3 class="text-center text-white">Register Form</h3>
           <div class="form-group mb-3">
             <label for="regUsername">Username:</label>
             <input
@@ -63,7 +64,7 @@
           >
             Register
           </button>
-          <div class="text-center mt-3 text-muted">
+          <div class="text-center mt-3">
             Already Have an Account?
             <a id="forgot" routerLink="/login">Login</a>
           </div>
@@ -71,4 +72,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

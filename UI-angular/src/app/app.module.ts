@@ -10,6 +10,7 @@ import { AddBookComponent } from './components/add-book/add-book.component';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
 import { TokenInterceptor } from './interceptors/token.interceptor';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { TokenInterceptor } from './interceptors/token.interceptor';
     AddBookComponent,
     RegisterComponent,
     LoginComponent,
+    HeaderComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FormsModule],
   providers: [

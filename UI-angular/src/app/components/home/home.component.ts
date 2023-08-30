@@ -19,11 +19,7 @@ export class HomeComponent implements OnInit {
     publicationDate: '',
   };
 
-  constructor(
-    private bookService: BooksService,
-    private router: Router,
-    private auth: AuthService
-  ) {}
+  constructor(private bookService: BooksService, private router: Router) {}
 
   ngOnInit(): void {
     this.getAllBooks();
@@ -54,8 +50,5 @@ export class HomeComponent implements OnInit {
   populateForm(book: Book) {
     this.bookToAddOrUpdate = { ...book };
     this.router.navigate(['addbook', book.id]);
-  }
-  loggedOut(): void {
-    this.auth.loggedOut();
   }
 }
