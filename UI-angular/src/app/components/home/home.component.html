@@ -1,0 +1,50 @@
+<div class="d-flex justify-content-end">
+  <button (click)="loggedOut()" class="btn btn-dark m-3">Logout</button>
+</div>
+<div class="container">
+  <h1 class="mt-4 text-center shadow-sm p-3 mb-5 bg-white rounded">
+    Book List
+  </h1>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col">
+        <div class="book-row">
+          <div class="book-row-details">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Author</th>
+                  <th>Publication Date</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let book of books">
+                  <td>{{ book.title }}</td>
+                  <td>{{ book.author }}</td>
+                  <td>{{ book.publicationDate }}</td>
+                  <td>
+                    <a class="btn btn-danger" (click)="deleteBook(book.id)">
+                      <i class="fas fa-trash"></i> Delete
+                    </a>
+                  </td>
+                  <td>
+                    <a (click)="populateForm(book)" class="btn btn-primary">
+                      <i class="fas fa-pen-square"></i> Edit
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-12 mt-4">
+      <a routerLink="addbook" class="btn btn-success d-block btn-lg py-3"
+        >Add Book</a
+      >
+    </div>
+  </div>
+</div>

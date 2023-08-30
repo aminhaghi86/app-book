@@ -1,0 +1,21 @@
+/* darkMore config */
+
+.dark-mode {
+    background-color: #333;
+  }
+  
+  .light-mode {
+    background-color: #fff;
+  }
+  
+  .dark-text {
+    color: #333;
+  }
+  
+  .light-text {
+    color: #fff;
+  }
+  
+  /* Additional styles for dark mode and light mode */
+  
+/* end of darkMore config */
